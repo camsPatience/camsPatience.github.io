@@ -1,0 +1,22 @@
+body { 
+    font-family: 'power_red_and_greenregular', Arial, sans-serif;
+	font-size: 33px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+
+img {
+    display: block;
+    max-width:128px;
+    max-height:128px;
+    width: auto;
+    height: 128px;
+	image-rendering: crisp-edges;
+}
