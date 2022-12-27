@@ -1,5 +1,5 @@
 @font-face {
     font-family: Power Green Regular;
-    src: url("../../camsPatience/PKMNEM.ttf") format('truetype');
+    src: url("@{plChildRoot}/PKMNEM.ttf") format('truetype');
     font-style: normal;
 }
