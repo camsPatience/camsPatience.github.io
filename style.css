@@ -3,3 +3,7 @@
     src: url("@{plChildRoot}/PKMNEM.ttf") format('truetype');
     font-style: normal;
 }
+
+body { 
+    font-family: 'Power Green Regular', Arial, sans-serif;
+}
