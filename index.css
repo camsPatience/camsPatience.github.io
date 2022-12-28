@@ -1,0 +1,69 @@
+body { 
+    font-family: 'resynching22medium', Arial, sans-serif;
+	font-size: 33px;
+	background-color: #293134;
+	background-image: url("./images/dex/!bg.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	background-size: cover;
+	image-rendering: crisp-edges;
+}
+
+background {
+	opacity: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 151, 212, 0.7);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(187, 188, 241, 0.7);
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+    text-align: center;
+	image-align: center;
+}
+
+td:nth-child(2) {
+	width: auto;
+    height: 128px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  image-rendering: crisp-edges;
+}
+
+.type {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	/*placeholder*/
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 50%;
+}
+
+p {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 50%;
+}
+
+ul {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 50%;
+	margin-left: 25%;
+}

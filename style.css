@@ -1,7 +1,17 @@
+/*Define the Pokemon font*/
 @font-face {
     font-family: 'power_red_and_greenregular';
     src: url('pkmnfl-webfont.woff2') format('woff2'),
          url('pkmnfl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Define the SRB2 font*/
+@font-face {
+    font-family: 'resynching22medium';
+    src: url('resynching22-webfont.woff2') format('woff2'),
+         url('resynching22-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
