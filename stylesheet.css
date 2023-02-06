@@ -10,3 +10,57 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'khmenu';
+    src: url('khmenu-webfont.woff2') format('woff2'),
+         url('khmenu-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'khmenu';
+    src: url('khmenu_italic-webfont.woff2') format('woff2'),
+         url('khmenu_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'khmenu';
+    src: url('khmenu_bold-webfont.woff2') format('woff2'),
+         url('khmenu_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'khmenu';
+    src: url('khmenu_bolditalic-webfont.woff2') format('woff2'),
+         url('khmenu_bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'khgummi';
+    src: url('khgummi-webfont.woff2') format('woff2'),
+         url('khgummi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'khdata';
+    src: url('khdata-webfont.woff2') format('woff2'),
+         url('khdata-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

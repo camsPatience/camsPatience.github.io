@@ -2,12 +2,11 @@ body {
     font-family: 'khmenu', Arial, sans-serif;
 	font-size: 33px;
 	background-color: #293134;
-	background-image: url("./images/dex/!bg.png");
+	background-image: url("./images/kh/!bg.png");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-attachment: fixed;
 	background-size: cover;
-	image-rendering: crisp-edges;
 }
 
 background {
@@ -37,12 +36,17 @@ td:nth-child(2) {
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto;
-  image-rendering: crisp-edges;
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .type {
@@ -51,8 +55,13 @@ td:nth-child(2) {
 	margin-right: auto;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 h1 {
-	/*placeholder*/
 	background-color: rgba(255, 255, 255, 0.8);
 	width: 50%;
 }
