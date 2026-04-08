@@ -1,1 +1,114 @@
-yeah
+<!DOCTYPE html>
+<html>
+	<title>KH Camp Menu Layout</title>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="bg" class="bgscroll"></div>
+		<div class="scanline"></div>
+		<div id="barrier" class="barrier"></div>
+		<div class="header">
+			<ht id="head">Home ~ Camp Menu</ht>
+		</div>
+		<div class="header-left"></div>
+		
+		<comment> -- POP-UPS -- </comment>
+		
+		<div data-title="About" id="popabout" class="popup">
+			<span style="display:block;position:relative;margin:auto;padding:2rem;padding-top:1rem;">
+				<span style="height:80%">
+					<cyan style="text-decoration:underline">About this project</cyan><br>
+					This is a recreation of the Camp Menu from the Kingdom Hearts series, largely taking after Kingdom Hearts II. It is free to use, so long as you credit this <a style="color:#c84aff;text-decoration:underline;" href="https://github.com/camsPatience/camsPatience.github.io">Github repository</a>.<br>
+					If an entry has a star/ability icon on it, you can hover that icon to view the note for that entry.<br>
+					<red>(This project is designed for desktop PCs that display at 1280x720 or higher. Please enable audio auto-play for sound effects.)</red>
+					<div style="height:2rem;"></div>
+				</span>
+				<center><div style="bottom:1%;" data-snd="close" data-descid="default" onclick="popClose('popabout')" class="button popcloser">Close</div></center>
+			</span>
+		</div>
+		
+		<div data-title="Credits" id="popcredit" class="popup">
+			<span style="display:block;position:relative;margin:auto;padding:2rem;padding-top:1rem;">
+				<span style="height:80%">
+					<cyan style="text-decoration:underline">Credits</cyan><br>
+					<cyan>Countless free HTML/CSS/JS answers:</cyan> Stack Overflow and W3Schools<br>
+					<span style="padding-left:2rem">There's no learning tool quite like the mistakes of the past.</span><br>
+					<cyan>Font:</cyan> DFSouGei-W5G-KH25<br>
+					<span style="padding-left:2rem">Appears to have been recreated by Vladabdf, but I can't find an original source.</span><br>
+					<cyan>Background and SFX:</cyan> Kingdom Hearts Re:Collection, by Televo<br>
+					<cyan>Sheep (important):</cyan> Google Noto emoji set<br>
+					<div style="height:2rem;"></div>
+				</span>
+				<center><div data-snd="close" data-descid="default" onclick="popClose('popcredit')" class="button popcloser">Close</div></center>
+			</span>
+		</div>
+		
+		<comment> -- MAIN SCREENS -- </comment>
+		
+		<div id="home" data-title="Home" class="buttonArea">
+			<div style="height:3rem;"></div>
+			
+			<div data-descid="mainlist" data-snd="click" onclick="screenTrans('home','mainlist')" class="button clickable">Sample List A</div>
+			<div data-descid="sublist" data-snd="click" onclick="screenTrans('home','sublist')" class="button clickable">Sample List B</div>
+			<div style="height:3rem;"></div>
+			
+			<div data-descid="about" data-snd="open" onclick="popOpen('popabout')" class="button clickable">About</div>
+			<div data-descid="credits" data-snd="open" onclick="popOpen('popcredit')" class="button clickable">Credits</div>
+			
+			<div style="height:3rem;"></div>
+			
+			<div data-descid="bgscroll" data-snd="click" onclick="toggleAnim()" class="button clickable">Background Animation: <cyan id="bgState"></cyan></div>
+			<div style="height:3rem;"></div>
+		</div>
+		<div id="mainlist" data-title="Sample List A" style="display:none;opacity:0" class="buttonArea">
+			<div style="height:3rem;"></div>
+			
+			<div data-descid="entry-1" class="button">Entry 1</div>
+			<div data-descid="entry-2" class="button">Entry 2<img data-note="(Demonstration of a note. I have no fucking clue how to make this NOT be in an image tag and I really don't feel like figuring it out right now.)" class="note" src="./res/img/ability.png"></div>
+			<div data-descid="entry-3" class="button">Entry 3</div>
+			<div data-descid="entry-4" class="button">Entry 4</div>
+			
+			<div style="height:3rem;"></div>
+			
+			<div data-descid="back" data-snd="close" onclick="screenTrans('mainlist','home')" class="button clickable">Back</div>
+			
+			<div style="height:3rem;"></div>
+		</div>
+		<div id="sublist" data-title="Sample List B" style="display:none;opacity:0" class="buttonArea">
+			<div style="height:3rem;"></div>
+			
+			<div data-descid="entry-1" class="button">Entry 1</div>
+			<div data-descid="entry-2" class="button">Entry 2</div>
+			<div data-descid="entry-3" class="button">Entry 3</div>
+			<div data-descid="entry-4" class="button">Entry 4</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler<img data-note="(You just lost the game btw)" class="note" src="./res/img/ability.png"></div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			<div data-descid="filler" class="button">Filler</div>
+			
+			<div style="height:3rem;"></div>
+			
+			<div data-descid="back" data-snd="close" onclick="screenTrans('sublist','home')" class="button clickable">Back</div>
+			
+			<div style="height:3rem;"></div>
+		</div>
+		
+		<comment> -- FOOTER -- </comment>
+		
+		<div class="description">
+			<span style="position:relative;display:block;width:95%;margin-top:0vh" id="desc">(Hover an entry to view its description.)</span>
+		</div>
+		<div class="description-right"></div>
+		<img src="./res/img/noto.png" style="position:fixed;max-height:20vh;max-width:15vw;right:5vw;bottom:1.5vh;mix-blend-mode:screen;filter:grayscale(100%) drop-shadow(0.5rem 0.5rem rgba(0,0,0,0.8));">
+	</body>
+	<script src="./kh2camp.js"></script>
+</html>
