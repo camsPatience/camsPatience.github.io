@@ -1,3 +1,10 @@
+:root {
+	--color_main: rgba(200, 74, 255, 0.5);
+	--color_fade: rgba(19, 5, 21, 1);
+	--color_border: #c84aff;
+	--scanline_hue: 272deg;
+}
+
 @font-face {
     font-family: 'DFSouGei-W5G-KH25';
     src: url('./res/fnt/DFSouGei-W5G-KH25.woff2') format('woff2'),
@@ -9,6 +16,7 @@
 
 body {
 	background: #130515;
+	background: #000;
 	color: #fff;
 	font-size: 2rem;
 	font-family: 'DFSouGei-W5G-KH25';
@@ -92,12 +100,10 @@ a {
 	bottom: 0;
 	left: 0;
 	padding-left: 20vw;
-	--padding-top: 0.2rem;
 	padding-bottom: 0.5rem;
-	-- background: rgba(200, 74, 255, 0.5);
-	background-image: linear-gradient(to bottom, rgba(200, 74, 255, 0.5), rgba(19, 5, 21, 1));
-	border-top: 0.5vw solid #c84aff;
-	border-right: 0.5vw solid #c84aff;
+	background-image: linear-gradient(to bottom, var(--color_main), var(--color_fade));
+	border-top: 0.75vh solid var(--color_border);
+	border-right: 0.75vh solid var(--color_border);
 	border-top-right-radius: 0.5rem;
 	text-shadow: 0.2rem 0.2rem rgba(0,0,0,0.8);
 }
@@ -109,10 +115,9 @@ a {
 	bottom: 0;
 	right: 0;
 	padding-bottom: 0.5rem;
-	-- background: rgba(200, 74, 255, 0.5);
-	background-image: linear-gradient(to bottom, rgba(200, 74, 255, 0.5), rgba(19, 5, 21, 1));
-	border-top: 0.5vw solid #c84aff;
-	border-left: 0.5vw solid #c84aff;
+	background-image: linear-gradient(to bottom, var(--color_main), var(--color_fade));
+	border-top: 0.75vh solid var(--color_border);
+	border-left: 0.75vh solid var(--color_border);
 	border-top-left-radius: 0.5rem;
 	text-shadow: 0.2rem 0.2rem rgba(0,0,0,0.8);
 }
@@ -128,9 +133,9 @@ a {
 	padding-right: 20vw;
 	top: 0;
 	right: 0;
-	background-image: linear-gradient(to top, rgba(200, 74, 255, 0.5), rgba(19, 5, 21, 1));
-	border-bottom: 0.5vw solid #c84aff;
-	border-left: 0.5vw solid #c84aff;
+	background-image: linear-gradient(to top, var(--color_main), var(--color_fade));
+	border-bottom: 0.75vh solid var(--color_border);
+	border-left: 0.75vh solid var(--color_border);
 	border-bottom-left-radius: 0.5rem;
 	text-shadow: 0.2rem 0.2rem rgba(0,0,0,0.8);
 	color: #00B3E0;
@@ -142,9 +147,9 @@ a {
 	width: 20.5vw;
 	top: 0;
 	left: 0;
-	background-image: linear-gradient(to top, rgba(200, 74, 255, 0.5), rgba(19, 5, 21, 1));
-	border-bottom: 0.5vw solid #c84aff;
-	border-right: 0.5vw solid #c84aff;
+	background-image: linear-gradient(to top, var(--color_main), var(--color_fade));
+	border-bottom: 0.75vh solid var(--color_border);
+	border-right: 0.75vh solid var(--color_border);
 	border-bottom-right-radius: 0.5rem;
 	text-shadow: 0.2rem 0.2rem rgba(0,0,0,0.8);
 	color: #00B3E0;
@@ -206,9 +211,10 @@ a {
 
 .scanline {
 	opacity: 0.4;
-	mix-blend-mode:multiply;
+	-- mix-blend-mode: multiply;
 	background: url("./res/img/scanline.png");
 	background-repeat: repeat;
+	filter: hue-rotate(var(--scanline_hue));
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
