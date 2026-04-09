@@ -133,6 +133,16 @@ a {
 	position: absolute;
 	margin-left: 21vw;
 	top: 1%;
+	width: 55vw;
+	height: 20vh;
+	font-size: 2rem;
+	container-name: desc-content;
+}
+
+@media (max-height: 768px) {
+	.desc-content {
+		font-size: 1.5rem;
+	}
 }
 
 .description-right {
