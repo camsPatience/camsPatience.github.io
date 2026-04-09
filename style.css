@@ -16,7 +16,6 @@
 
 body {
 	background: #130515;
-	background: #000;
 	color: #fff;
 	font-size: 2rem;
 	font-family: 'DFSouGei-W5G-KH25';
@@ -211,7 +210,6 @@ a {
 
 .scanline {
 	opacity: 0.4;
-	-- mix-blend-mode: multiply;
 	background: url("./res/img/scanline.png");
 	background-repeat: repeat;
 	filter: hue-rotate(var(--scanline_hue));
