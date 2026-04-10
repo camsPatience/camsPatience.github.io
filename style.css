@@ -86,17 +86,7 @@ a {
 	margin-top: 1vh;
 	padding-right: 13vw;
 	padding-left: 10vw;
-	margin-bottom: 1rem;.border-nest {
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		width: 19.75vw;
-		height: 19.25vh;
-		border-top: 0.75vh solid var(--color_main);
-		border-left: 0.75vh solid var(--color_main);
-		border-top-left-radius: 0.5rem;
-		opacity: 0.5;
-	}
+	margin-bottom: 1rem;
 	overflow-y: scroll;
 	overflow-x: visible;
 	transition: opacity 0.5s;
